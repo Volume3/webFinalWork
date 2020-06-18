@@ -1,0 +1,280 @@
+body{
+  margin: 0;
+  /*background: url("../images/9.jpg") no-repeat;*/
+  background-size: 100% 150%;
+  /*background-color: #e3e3e3;*/
+  box-sizing: border-box;
+  
+}
+#BackG{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  background-color: #009999;
+  /*background-color: rgba(0,102,51,0.8);*/
+  width: 50%;
+  height: 100%;
+}
+
+#Shape_1 {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(224, 224, 224);
+  border-radius: 2px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  left: 162px;
+  top: 100px;
+  width: 354px;
+  height: 254px;
+  z-index: 10;
+}
+#Shape_2 {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(224, 224, 224);
+  border-radius: 2px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  left: 163px;
+  top: 102px;
+  width: 353px;
+  height: 254px;
+  z-index: 9;
+}
+#Shape_3 {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(224, 224, 224);
+  border-radius: 2px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.25);
+  position: absolute;
+  left: 166px;
+  top: 107px;
+  width: 345px;
+  height: 248px;
+  z-index: 8;
+  box-shadow: 7px 4px 3px #4A4A4A;
+}
+#Register {
+  font-size: 22px;
+  font-family: "Candara";
+  color: #999;
+  line-height: 1.417;
+  text-align: left;
+  position: absolute;
+  left: 480px;
+  top: 468px;
+  z-index: 5;
+  width: 50px;
+}
+#Register a{
+	color: white;
+	text-decoration: none;
+}
+#Register a:hover{
+/*  color: #68838B;*/
+  text-shadow: 1px 1px 1px;
+}
+#Layer_3 {
+  background-image: url("../images/Layer 3.png");
+  opacity: 0.4;
+  position: absolute;
+  left: 305px;
+  top: 122px;
+  width: 60px;
+  height: 60px;
+  z-index: 64;
+}
+#Me_copy {
+  background-image: url("../images/Me copy.png");
+  position: absolute;
+  left: 305px;
+  top: 122px;
+  width: 49px;
+  height: 57px;
+  z-index: 56;
+}
+#theBackground {
+  border-radius: 50%;
+  background-color: rgb(244, 244, 244);
+  box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.004),inset 0px 1px 0px 0px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  left: 305px;
+  top: 122px;
+  width: 57px;
+  height: 57px;
+  z-index: 52;
+}
+#delete_too {
+  position: absolute;
+  left: 494px;
+  top: 115.8px;
+  width: 7px;
+  height: 7px;
+  z-index: 12;
+}
+#delete {
+  border-radius: 50%;
+  background-color: rgb(204, 204, 204);
+  position: absolute;
+  left: 491px;
+  top: 113px;
+  width: 14px;
+  height: 13px;
+  z-index: 11;
+}
+#Separator {
+  background-image: url("../images/Separator.png");
+  position: absolute;
+  left: 255px;
+  top: 193px;
+  width: 6px;
+  height: 29px;
+  z-index: 41;
+}
+#username{
+  position: absolute;
+  left: 225.5px;
+  top: 192px;
+  z-index: 41;
+  width: 227.5px;
+  height: 31px;
+  border: 1.5px solid #e3e3e6;
+  border-radius: 2px;
+  padding-left: 40px;
+  outline: none;     /*取消input被选中后出现的蓝框*/
+  opacity: 0.7;
+}
+#username:hover{
+	border-color: #93c273;
+	box-shadow: 0px 0px 5px #d9e4d3;
+}
+::-webkit-input-placeholder{
+	color: #a7a7a7;
+	position: relative;
+	top: 1px;
+}    /* 使用webkit内核的浏览器 */  
+#User_Icon{
+  position: absolute;
+  left: 232.5px;
+  top: 200px;
+  z-index: 41; 
+  border: 0px;
+}
+#Key_Icon {
+  position: absolute;
+  left: 232px;
+  top: 246.5px;
+  width: 16px;
+  height: 14px;
+  z-index: 41;
+}
+#password{
+  position: absolute;
+  left: 225.5px;
+  top: 238px;
+  z-index: 40;
+  width: 227.5px;
+  height: 31px;
+  border: 1.5px solid #e3e3e6;
+  border-radius: 2px;
+  padding-left: 40px;
+  outline: none;     /*取消input被选中后出现的蓝框*/
+  opacity: 0.7;
+}
+#password:hover{
+	border-color: #93c273;
+	box-shadow: 0px 0px 5px #d9e4d3;
+}
+#Separator1{
+  background-image: url("../images/Separator.png");
+  position: absolute;
+  left: 255px;
+  top: 238px;
+  width: 6px;
+  height: 29px;
+  z-index: 41;
+}
+#Forget {
+  font-size: 13px;
+  color: #009999;
+  /*color: rgba(0,102,51,0.8);*/
+/*  color: rgba(153, 153, 153, 0.902);*/
+  line-height: 1.2;
+  text-align: left;
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.004);
+  position: absolute;
+  left: 393px;
+  top: 275px;
+  z-index: 40;
+  width: 60px;
+}
+#LoginBtn span {
+  font-size: 15px;
+  font-family: "Candara";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  line-height: 35px;
+  float: left;
+  /*left: 392px;
+  top: 307.129px;*/
+  z-index: 33;
+  margin-left: 17px;
+}
+#submit{
+  border-radius: 3px;
+  background-color: #009999;
+  /*background-color: rgba(0,102,51,0.7);*/
+  box-shadow: inset 0px -3px 0px 0px rgba(0, 0, 0, 0.08);
+  position: absolute;
+  left: 300px;
+  top: 303px;
+  width: 80px;
+  height: 35px;
+  z-index: 32;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  border: 0px;
+}
+#submit:hover{
+  opacity: 0.8;
+  cursor: pointer;
+}
+#MainPart{
+	transform: scale(1.35,1.35);
+	position: absolute;
+	top: 5.3%;
+	left: 47%;
+  box-shadow: 2px 2px 2px;
+}
+#Medipng{
+  position: absolute;
+  left: -150px;
+  top: 40%;
+  background: url("../images/medical.png") no-repeat;
+  background-size: 100% 100%;
+  width: 300px;
+  height: 300px;
+}
+#Headline{
+  position: absolute;
+  left: 180px;
+  top: 15%;
+  background: url("../images/headline.png") no-repeat;
+  width: 450px;
+  height: 264px;
+  background-size: 100% 100%;
+}
+#Arrow{
+  position: absolute;
+  left: 1450px;
+  top: 670px;
+  width: 20px;
+  height: 27px;
+  background: url("../images/Arrow.png") no-repeat;
+  background-size: 100% 100%;
+  z-index: 3;
+}

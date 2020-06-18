@@ -1,0 +1,402 @@
+body{
+	margin: 0;
+	background-color: #e3e3e3;
+}
+.page{
+	background: url('../images/background.jpg') no-repeat;
+	background-size: 100% 100%;
+	padding-top: 67%;
+}
+.header{
+	position: absolute;
+	background-color: #898081;
+	width: 100%;
+	height: 80px;
+	opacity: 0.8;
+	top: 0;
+	left: 0;
+}
+.logo{
+	margin-top: 10px;
+	margin-left: 2%;
+	font-size: 25px;
+	color: white;
+	opacity: 0.9;
+	display: inline-block;
+}
+.Login {
+	font-size: 20px;
+	color: white;
+	/*opacity: 0.9;*/
+	display: inline-block;
+	float: right;
+	margin-right: 10%;
+	margin-top: 2%;
+  z-index: 100;
+}
+.Login a{
+	text-decoration: none;
+	color: white;
+}
+#caption{
+	color: white;
+	font-size: 35px;
+	font-weight: 900px;
+	position: absolute;
+	top: 200px;
+	left: 42%;
+	font-family:"Microsoft YaHei",Georgia,Serif;
+	text-shadow: 2px 2px 2px black;
+}
+#caption>span{
+	font-size: 38px;
+	text-decoration: underline;
+
+}
+#caption>span+span{
+	font-size: 25px;
+	text-decoration: none;
+}
+#intro{
+	font-size: 18px;
+	color: white;
+	position: absolute;
+	top: 320px;
+	left: 44%;
+	font-family:"Microsoft YaHei",Georgia,Serif;
+
+}
+#intro span{
+	text-shadow: 1px 1px 1px black;
+}
+#downldapp{
+	text-align: center;
+	display: inline-block;
+	position: absolute;
+	top: 380px;
+	left: 45.5%;
+	background-color: darkgrey;
+	padding: 8px;
+	border-radius: 3px;
+}
+#downldapp span{
+	background-color: darkgrey;
+}
+#Shape_1 {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(224, 224, 224);
+  border-radius: 2px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  left: 162px;
+  top: 100px;
+  width: 374px;
+  height: 304px;
+  z-index: 10;
+}
+#Shape_2 {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(224, 224, 224);
+  border-radius: 2px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  left: 163px;
+  top: 102px;
+  width: 373px;
+  height: 304px;
+  z-index: 9;
+}
+#Shape_3 {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(224, 224, 224);
+  border-radius: 2px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.25);
+  position: absolute;
+  left: 166px;
+  top: 107px;
+  width: 365px;
+  height: 298px;
+  z-index: 8;
+}
+#LoginNow {
+  font-size: 12px;
+  font-family: "Candara";
+  color: #999;
+  line-height: 1.417;
+  text-align: left;
+  position: absolute;
+  left: 235.094px;
+  top: 388.666px;
+  z-index: 5;
+}
+#LoginNow a{
+	color: #72985a;
+	text-decoration: none;
+}
+#Layer_3 {
+  background-image: url("../images/Layer 3.png");
+  opacity: 0.4;
+  position: absolute;
+  left: 305px;
+  top: 122px;
+  width: 60px;
+  height: 60px;
+  z-index: 64;
+}
+#Me_copy {
+  background-image: url("../images/Me copy.png");
+  position: absolute;
+  left: 305px;
+  top: 122px;
+  width: 49px;
+  height: 57px;
+  z-index: 56;
+}
+#theBackground {
+  border-radius: 50%;
+  background-color: rgb(244, 244, 244);
+  box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.004),inset 0px 1px 0px 0px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  left: 305px;
+  top: 122px;
+  width: 57px;
+  height: 57px;
+  z-index: 52;
+}
+#delete_too {
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  left: 494px;
+  top: 105.8px;
+  width: 7px;
+  height: 7px;
+  z-index: 12;
+}
+#delete {
+  border-radius: 50%;
+  background-color: rgb(204, 204, 204);
+  position: absolute;
+  left: 491px;
+  top: 113px;
+  width: 14px;
+  height: 13px;
+  z-index: 11;
+}
+#Separator {
+  background-image: url("../images/Separator.png");
+  position: absolute;
+  left: 255px;
+  top: 193px;
+  width: 6px;
+  height: 29px;
+  z-index: 41;
+}
+#username{
+  position: absolute;
+  left: 225.5px;
+  top: 192px;
+  z-index: 41;
+  width: 184.5px;
+  height: 26px;
+  border: 1.5px solid #e3e3e6;
+  border-radius: 2px;
+  padding-left: 40px;
+  outline: none;     /*取消input被选中后出现的蓝框*/
+}
+#username:hover{
+	border-color: #93c273;
+	box-shadow: 0px 0px 5px #d9e4d3;
+}
+::-webkit-input-placeholder{
+	color: #a7a7a7;
+	position: relative;
+	top: 1px;
+}    /* 使用webkit内核的浏览器 */  
+#User_Icon{
+  position: absolute;
+  left: 231.5px;
+  top: 198px;
+  z-index: 41; 
+  border: 0px;
+}
+
+#Password_Field {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 680px;
+  height: 480px;
+  z-index: 41;
+}
+
+#Key_Icon1 {
+  position: absolute;
+  left: 232px;
+  top: 248px;
+  width: 16px;
+  height: 14px;
+  z-index: 41;
+}
+#Key_Icon2 {
+  position: absolute;
+  left: 232px;
+  top: 298px;
+  width: 16px;
+  height: 14px;
+  z-index: 41;
+}
+#password1{
+  position: absolute;
+  left: 225.5px;
+  top: 242px;
+  z-index: 40;
+  width: 184.5px;
+  height: 26px;
+  border: 1.5px solid #e3e3e6;
+  border-radius: 2px;
+  padding-left: 40px;
+  outline: none;     /*取消input被选中后出现的蓝框*/
+}
+#password1:hover{
+	border-color: #93c273;
+	box-shadow: 0px 0px 5px #d9e4d3;
+}
+#password2{
+  position: absolute;
+  left: 225.5px;
+  top: 292px;
+  z-index: 40;
+  width: 184.5px;
+  height: 26px;
+  border: 1.5px solid #e3e3e6;
+  border-radius: 2px;
+  padding-left: 40px;
+  outline: none;     /*取消input被选中后出现的蓝框*/
+}
+#password2:hover{
+	border-color: #93c273;
+	box-shadow: 0px 0px 5px #d9e4d3;
+}
+#Separator1{
+  background-image: url("../images/Separator.png");
+  position: absolute;
+  left: 255px;
+  top: 243px;
+  width: 6px;
+  height: 29px;
+  z-index: 41;
+}
+#Separator2{
+  background-image: url("../images/Separator.png");
+  position: absolute;
+  left: 255px;
+  top: 293px;
+  width: 6px;
+  height: 29px;
+  z-index: 41;
+}
+#Forget {
+  font-size: 13px;
+  color: rgba(153, 153, 153, 0.902);
+  line-height: 1.2;
+  text-align: left;
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.004);
+  position: absolute;
+  left: 228.062px;
+  top: 332px;
+  z-index: 40;
+}
+.Switches {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 680px;
+  height: 480px;
+  z-index: 30;
+}
+.Bottom {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 680px;
+  height: 480px;
+  z-index: 29;
+}
+.On {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 680px;
+  height: 480px;
+  z-index: 28;
+}
+.Shape_5_copy_4 {
+  border-radius: 50%;
+  background-color: rgba(236, 236, 236, 0);
+  position: absolute;
+  left: 264px;
+  top: 306px;
+  width: 22px;
+  height: 22px;
+  z-index: 27;
+}
+.Shape_5_copy {
+  border-radius: 50%;
+  background-image: -moz-linear-gradient( 90deg, rgb(0,0,0) 0%, rgb(255,255,255) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(0,0,0) 0%, rgb(255,255,255) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(0,0,0) 0%, rgb(255,255,255) 100%);
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.25),inset 0px 1px 0px 0px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  left: 267px;
+  top: 309px;
+  width: 16px;
+  height: 16px;
+  z-index: 26;
+}
+.Shape_4_copy {
+  background-image: -moz-linear-gradient( 90deg, rgb(255,255,255) 0%, rgb(0,0,0) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(255,255,255) 0%, rgb(0,0,0) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(255,255,255) 0%, rgb(0,0,0) 100%);
+  box-shadow: 0px 1px 1px 0px rgba(255, 255, 255, 0.004),inset 0px 1px 2px 0px rgba(0, 0, 0, 0.35);
+  position: absolute;
+  left: 242px;
+  top: 310px;
+  width: 40px;
+  height: 14px;
+  z-index: 25;
+}
+.Tick {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(0, 0, 0);
+  background-color: rgb(170, 170, 170);
+  opacity: 0;
+  position: absolute;
+  left: 226px;
+  top: 313px;
+  width: 8px;
+  height: 6px;
+  z-index: 24;
+}
+.Remember_ {
+  font-size: 11.46px;
+  font-family: "Candara";
+  color: rgb(153, 153, 153);
+  line-height: 0.001;
+  text-align: left;
+  position: absolute;
+  left: 290.078px;
+  top: 316.994px;
+  z-index: 15;
+}
+
+/*#MainPart{
+	transform: scale(2,2);
+	position: absolute;
+	top: 32px;
+	left: 100px;
+}*/

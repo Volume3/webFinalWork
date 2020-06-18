@@ -1,0 +1,179 @@
+body{
+	height: 1300px;
+	background-color: #F5F5F5;	
+	font-family: "Microsoft Yahei";
+	box-sizing: border-box;
+	font-size: 18px;
+	color: #333;
+}
+#MainPart{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding-bottom: 50px;
+}
+#nav{
+	width: 100%;
+	height: 80px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: white;
+	border: 1px solid #707070;
+}
+#navNext{
+	height: 280px;
+	width: 100%;
+	background: url("../images/10.jpg") no-repeat;
+	background-size: 100% 250%;
+	/*background-position: 0 -50px;*/
+}
+#BaseIntro{
+	width: 100%;
+	height: 90px;
+	position: absolute;
+	top: 250px;
+	left: 0;
+	background-color: white;
+	border: 1px solid #707070;
+}
+#BaseIntro span{
+	position: absolute;
+	top: 20px;
+	left: 250px;
+}
+#Icon{
+	border-radius: 500%;
+	border: 1px solid #707070;
+	width: 110px;
+	height: 110px;
+	position: absolute;
+	top: 200px;
+	left: 110px;
+	z-index: 1;
+	box-shadow: -2px 0 2px #e5e8ea, 2px 0 2px #e5e8ea, 0 5px 5px #e5e8ea;
+}
+#Icon img{
+	z-index: 3;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+#newIcon{
+	border-radius: 50%;
+	border: 1px solid #707070;
+	width: 110px;
+	height: 110px;
+	position: absolute;
+	top: 200px;
+	left: 110px;
+	z-index: 3;
+	outline: 0;
+	opacity: 0;
+}
+#Username{
+	position: absolute;
+	top: 220px;
+	left: 250px;
+	font-size: 20px;
+	z-index: 1;
+}
+#BaseInfo{
+	position: absolute;
+	top: 370px;
+	left: 200px;
+	background-color: white;
+	width: 1100px;
+	height: 100%;
+}
+#FirstCol{
+	position: absolute;
+	top: 0px;
+	left: 0;
+	width: 1100px;
+	height: 65px;
+	border-bottom: 1px solid #e2e5ec;
+	z-index: 1;
+}
+#theIntro{
+	float: left;
+	color: #3da8f5;
+	padding: 22px 25px 18px 25px;
+	border-bottom: 2px solid #3da8f5;
+	font-size: 18px;
+}
+#Separator{
+	border: 1px solid #c5d0da;
+	margin-top: 22px;
+	height: 23px;
+	float: left;
+}
+.Info{
+	white-space: nowrap;
+	word-wrap: break-word;
+	max-width: 1000px;
+	text-overflow: ellipsis;
+	letter-spacing: 1px;
+}
+#Telephone{
+	position: absolute;
+	top: 138px;
+	left: 110px;
+	z-index: 1;
+	background-color: #999;
+	background-color: rgba(0,0,0,0.05);
+	width: 750px;
+	padding: 20px 60px;
+}
+#Email{
+	position: absolute;
+	top: 202px;
+	left: 110px;
+	z-index: 1;
+	width: 750px;
+	padding: 20px 60px;
+}
+#Birthdate{
+	position: absolute;
+	top: 266px;
+	left: 110px;
+	z-index: 1;
+	background-color: #999;
+	background-color: rgba(0,0,0,0.05);
+	width: 750px;
+	padding: 20px 60px;
+}
+#Gender{
+	position: absolute;
+	top: 330px;
+	left: 110px;
+	z-index: 1;
+	width: 750px;
+	padding: 20px 60px;
+}
+#Realname{
+	position: absolute;
+	top: 394px;
+	left: 110px;
+	z-index: 1;
+	background-color: #999;
+	background-color: rgba(0,0,0,0.05);
+	width: 750px;
+	padding: 20px 60px;
+}
+#Save{
+	position: absolute;
+	top: 900px;
+	left: 660px;
+	z-index: 1;
+	border: 1px solid #3da8f5;
+	padding: 14px 38px;
+	border-radius: 3px;
+	background-color: white;
+	font-size: 18px;
+}
+#Save:hover{
+	cursor: pointer;
+}

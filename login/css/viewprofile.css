@@ -1,0 +1,186 @@
+body{
+	height: 1300px;
+	background-color: #F5F5F5;	
+	font-family: "Microsoft Yahei";
+	box-sizing: border-box;
+	font-size: 18px;
+	color: #333;
+	margin: 0;
+}
+#navNext{
+	height: 280px;
+	width: 100%;
+	background: url("../images/10.jpg") no-repeat;
+	background-size: 100% 250%;
+	/*background-position: 0 -50px;*/
+}
+#MainPart{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding-bottom: 50px;
+}
+#nav{
+	width: 100%;
+	height: 80px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: white;
+	border: 1px solid #707070;
+}
+#BaseIntro{
+	width: 100%;
+	height: 90px;
+	position: absolute;
+	top: 250px;
+	left: 0;
+	background-color: white;
+}
+#Icon{
+	border-radius: 50%;
+	background-color: transparent;
+	width: 110px;
+	height: 110px;
+	position: absolute;
+	top: 200px;
+	left: 110px;
+	z-index: 1;
+	box-shadow: -2px 0 2px #e5e8ea, 2px 0 2px #e5e8ea, 0 5px 5px #e5e8ea;
+}
+#Icon img{
+	z-index: 2;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+#Username{
+	position: absolute;
+	top: 220px;
+	left: 250px;
+	font-size: 20px;
+}
+#Telephone{
+	position: absolute;
+	top: 268px;
+	left: 250px;
+	z-index: 1;
+}
+#Email{
+	position: absolute;
+	top: 300px;
+	left: 250px;
+	z-index: 1;
+}
+#BaseInfo{
+	position: absolute;
+	top: 370px;
+	left: 200px;
+	background-color: white;
+	width: 1100px;
+	height: 100%;
+}
+#FirstCol{
+	position: absolute;
+	top: 0px;
+	left: 0;
+	width: 1100px;
+	height: 65px;
+	border-bottom: 1px solid #e2e5ec;
+	z-index: 1;
+}
+#theIntro{
+	float: left;
+	color: #3da8f5;
+	padding: 22px 25px 18px 25px;
+	border-bottom: 2px solid #3da8f5;
+	font-size: 18px;
+}
+#Separator{
+	border: 1px solid #c5d0da;
+	margin-top: 22px;
+	height: 23px;
+	float: left;
+}
+#Username1{
+	position: absolute;
+	top: 510px;
+	left: 310px;
+	z-index: 1;
+	width: 750px;
+	width: 750px;
+	padding: 20px 60px;
+}
+#Gender{
+	position: absolute;
+	top: 574px;
+	left: 310px;
+	z-index: 1;
+	background-color: #999;
+	background-color: rgba(0,0,0,0.05);
+	width: 750px;
+	padding: 20px 60px;
+}
+.Info{
+	white-space: nowrap;
+	word-wrap: break-word;
+	max-width: 1000px;
+	text-overflow: ellipsis;
+	letter-spacing: 1px;
+}
+#Telephone1{
+	position: absolute;
+	top: 638px;
+	left: 310px;
+	z-index: 1;
+	width: 750px;
+	padding: 20px 60px;
+}
+#Email1{
+	position: absolute;
+	top: 702px;
+	left: 310px;
+	z-index: 1;
+	background-color: #999;
+	background-color: rgba(0,0,0,0.05);
+	width: 750px;
+	padding: 20px 60px;
+}
+#Birthdate{
+	position: absolute;
+	top: 766px;
+	left: 310px;
+	z-index: 1;
+	width: 750px;
+	padding: 20px 60px;
+}
+#Realname{
+	position: absolute;
+	top: 830px;
+	left: 310px;
+	z-index: 1;
+	background-color: #999;
+	background-color: rgba(0,0,0,0.05);
+	width: 750px;
+	padding: 20px 60px;
+}
+#Edit{
+	position: absolute;
+	top: 1000px;
+	left: 690px;
+	z-index: 1;
+	border: 1px solid #3da8f5;
+	padding: 14px 38px;
+	border-radius: 3px;
+}
+#Edit a{
+	text-decoration: none;
+	outline: none;
+	color: #333;
+}
+/*#UserInfo{
+	position: absolute;
+	top: 20px;
+}*/

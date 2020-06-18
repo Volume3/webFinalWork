@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>工作台</title>
+
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/dcalendar.picker.css"/>
+    <!-- <link rel="stylesheet" href="css/index.css"> -->
+  </head>
+  <style>
+    body{
+    	background-color: #F0FFF0;
+    }
+    .header{
+    	background-color: #009999;
+    	padding: 5px 0px 0px 30px;
+    }
+    .herder h2{
+    	margin-left: 30px;
+    }
+    #logo{
+        width: 13%;
+        position: relative;
+        top: -12px;
+    }
+    .ul{
+        position: absolute;
+        top: 25px;
+        left: 530px;
+    }
+    .ul li a{
+    	color:white;
+    }
+    .ul li a:active{
+    	background-color: white;
+    }
+    #LinkActionOn{
+    	color:black;
+    }
+    #LinkActionOff{
+    	color:white;
+    }
+    #LinkActionOn:hover{
+    	background-color: white;
+    }
+    #LinkActionOff:hover{
+    	background-color: #339999;
+    }
+    #leftPane{
+    	/*margin-left:-40px;*/
+    	position: relative;
+    	left:-40px;
+    }
+    #rightPane{
+        /*margin-left:385px;
+        margin-top:5px;*/
+        width: 275px;
+        height: 560px;
+        position: relative;
+        left:-40px;
+        top:5px;
+        box-shadow: 3px 3px 5px #888888;
+    	border-radius: 10px;
+    }
+    .col-sm-3.col-md-3{
+    	border:1px solid #B3B3B3;
+    	border-radius: 10px;
+    	margin: 5px 10px 5px 10px;
+    	/*padding: 15px;*/
+        padding: 15px 15px 15px 10px;
+    	width: 230px;
+    	height: 180px;
+    	box-shadow: 3px 3px 5px #888888;
+    }
+    #clickbed{
+        border:1px solid #B3B3B3;
+        border-radius: 10px;
+        margin: 5px 10px 5px 10px;
+        padding: 15px 15px 15px 10px;
+        width: 230px;
+        height: 180px;
+        box-shadow: 5px 5px 5px #33CC99;
+    }
+    #bed:hover{
+        box-shadow: 3px 3px 5px #33CC99;
+        cursor: pointer;
+    }
+    .panel-footer{
+        height: 30px;
+    	background-color: #F0FFF0;
+    	border-color: #F0FFF0;
+    }
+    #footer p{
+        position: relative;
+        top:5px;
+    	text-align: center;
+    }
+    .input{
+    	background-color: white;
+    	border:1px solid #B3B3B3;
+    	border-radius: 10px;
+    	width:275px;
+    	height: 560px;
+    	padding: 15px;
+    }
+    #hr1{
+    	margin-top:10px;
+    	margin-bottom:10px;
+    }
+    #hr2{
+    	margin-top:10px;
+    	margin-bottom:10px;
+    }
+    #hr3{
+    	margin-top:5px;
+    	margin-bottom:8px;
+    }
+    .bedInfo{
+    	padding: 5px;
+    	border:1px solid #B3B3B3;
+    	border-radius: 10px;
+    	height:150px;
+    	width:100px;
+    }
+    /*.bedInfo img{
+    	margin: 10px 0 0 5px;
+    }*/
+    .photoPane{
+        width: 80px;
+        height: 80px;
+        margin: 10px 0 0 5px;
+        overflow:hidden;
+        text-align: center;
+    }
+    .photoPane img{
+        width: 100%;
+    }
+    .bedInfo p{
+    	/*margin-left:20px;*/
+    	position: relative;
+    	left:22px;
+        /*left:0px;*/
+    	font-size: 20px;
+    }
+    .patientInfo{
+    	width:100px;
+    	height: 150px;
+    	position: relative;
+    	left:110px;
+    	top: -140px;
+    }
+    .patientInfo p{
+    	font-size: 13px;
+    }
+    .inbed{
+    	background-color: #33CC99;
+        border-color: #33CC99;
+    	border-radius: 10px;
+    	height: 30px;
+        width: 50px;
+        color: white;
+    	position: relative;
+    	left:50px;
+    	top: 10px;
+    }
+    .inbed:hover{
+    	opacity: 0.8;
+    }
+    .outbed{
+    	background-color: #FF0033;
+        border-color: #FF0033;
+    	border-radius: 10px;
+    	height: 30px;
+        width: 50px;
+    	color: white;
+    	position: relative;
+    	left: 140px;
+    	top: -20px;
+    }
+    .outbed:hover{
+    	opacity: 0.8;
+    }
+    #inputfile{
+    	width:240px;
+    }
+    #mainPane{
+        position: relative;
+        top: 5px;
+    	border-radius: 10px;
+    	margin:auto;
+    	width:1400px;
+    	padding: 10px;      
+    	background-color: white;
+    }
+    .administrator{
+    	width: 160px;
+    	height: 50px;
+    	/*border-radius: 25px;*/
+    	border-top-left-radius:25px;
+    	border-bottom-left-radius: 25px;
+    	position: absolute;
+    	right:0px;
+    	top:15px;
+    	background-color: #006C6C;
+    	/*opacity: 0.3;*/
+    }
+    .picture{
+    	width: 44px;
+    	height: 44px;
+    	border-radius: 22px;
+    	position: absolute;
+    	right:113px;
+    	top:3px;
+    	background-color:#158080;
+    	overflow:hidden
+    }
+    #personal{
+    	color:white;
+    	position: absolute;
+    	right:50px;
+    	top:32px;
+    	opacity: 0.8;
+    }
+    #pespic{
+    	position: relative;
+    	left:-1px;
+    	top:-1px;
+    }
+    #triangle{
+    	position: absolute;
+    	right:20px;
+    	top:31px;
+    }
+    #select{
+        width:100px;
+    }
+    .Login {
+        font-size: 14px;
+        color: white;
+    }
+    .Login a{
+        text-decoration: none;
+        color: white;
+    }
+    .Login #profile{
+        margin-right: -20px;
+        position: relative;
+        top:-10px;
+        left:50px;
+    }
+    .Login #logout{
+        position: relative;
+        top:10px;
+        left:15px;
+    }
+  </style>
+  <body Content-type: application/json>
+  	<div class="header">
+  		<h2><img src="images/logo.png" id="logo"></h2>
+  		<div class="ul">
+          <ul class="nav nav-tabs">
+            <li class="active"><a class="IsSelect" id="LinkActionOn" href="workbech.html">工作台</a></li>
+            <li class=""><a class="NotSelect" id="LinkActionOff" href="login/manageDoc.php">人员信息管理</a></li>
+            <li class=""><a class="NotSelect" id="LinkActionOff" href="web/text.html">床位信息管理</a></li>
+            <li class=""><a class="NotSelect" id="LinkActionOff" href="web/message.html">信息汇总平台</a></li>
+          </ul>
+        </div>
+        <div class="administrator">
+        	<div class="picture">
+        		<img src="images/icon.png" alt="" id="pespic">
+        	</div>
+        </div>
+        <div id="personal">
+            
+        </div>
+    </div>
+ <!--    <hr id="hr1"> -->
+    <div id="mainPane">
+	    <div class="container">
+		    <div class="row">
+			    <div class="col-sm-10 col-md-10" id="leftPane">
+				    <div id="leftPane">
+					    <div class="container">
+					    	<div class="row" id="">
+					            <div class="col-sm-3 col-md-3" id="bed1">
+					    	        
+					            </div>
+					            <div class="col-sm-3 col-md-3" id="bed2">
+					    	        
+					            </div>
+					            <div class="col-sm-3 col-md-3" id="bed3">
+					    	        
+					            </div>
+					            <div class="col-sm-3 col-md-3" id="bed4">
+					    	        
+					            </div>
+					        </div>
+					        <div class="row" id="">
+					            <div class="col-sm-3 col-md-3" id="bed5">
+					    	        
+					            </div>
+					            <div class="col-sm-3 col-md-3" id="bed6">
+					    	       
+					            </div>
+					            <div class="col-sm-3 col-md-3" id="bed7">
+					    	        
+					            </div>
+					            <div class="col-sm-3 col-md-3" id="bed8">
+					    	        
+					            </div>
+					        </div> 	
+					        <div class="row" id="">
+					            <div class="col-sm-3 col-md-3" id="bed9">
+					    	        
+					            </div>
+					            <div class="col-sm-3 col-md-3" id="bed10">
+					    	        
+					            </div>
+					            <div class="col-sm-3 col-md-3" id="bed11">
+					    	        
+					            </div>
+					            <div class="col-sm-3 col-md-3" id="bed12">
+					    	        
+					            </div>
+					        </div> 	 	
+					    </div>
+				    </div>
+			    </div>
+			    <div class="col-sm-2 col-md-2">
+			      <div id="rightPane">
+			    	<div class="input">
+			    	  <p>病人信息</p>
+			    	  <hr id="hr3">
+			          <!-- <form role="form" id="from" method="post" enctype="multipart/form-data"> -->
+                      <!-- <form id="addScore" method="post" enctype="multipart/form-data"> -->
+                      <form id="form" method="post" enctype="multipart/form-data">
+                        <div id="tips">
+    			            <div class="form-group">
+    			              <label for="name">床位号:</label>
+    			              <input type="text" class="form-control" id="bed_id" name="bed_id" placeholder="请输入床位号" value="">
+    			            </div>
+                            <div class="form-group">
+                              <!-- <label for="name">病历号:</label>
+                              <input type="text" class="form-control" id="mat_id" name="mat_id" placeholder="请输入病历号" value=""> -->
+                              <label for='name'>病历号:</label>
+                              <select class='form-control' id='mat_id'>
+                                  <option selected><p>请选择病历号</p></option>
+                              </select>
+                            </div>
+    			            <div class="form-group">
+    			              <label for="name">姓名:</label>
+    			              <input type="text" class="form-control" id="name" name="name" placeholder="请输入姓名" value="">
+    			            </div>
+                            <div class="form-group">
+                              <label for="name">入住日期:</label>
+                              <input type="text" class="form-control" id="date" name="date" placeholder="请输入入住日期" autocomplete="off" value="">
+                            </div>
+    			            <div class="form-group">
+    			              <label for="name">分娩情况:</label>
+    			              <!-- <input type="text" class="form-control" id="condition" name="condition" placeholder="请输入分娩情况" value=""> -->
+                              <select class='form-control' id='condition'>
+                                  <option selected><p>请选择分娩情况</p></option>
+                              </select>
+    			            </div>
+                        </div>
+			            <div class="form-group">
+			              <label for="inputfile">照片:</label>
+			              <input type="file" id="screenshot" name="screenshot">
+			            </div>
+                        <input type="submit" class="inbed" id="inbed" name="submit" style="display:block;" value="转入"/>
+                        <input type="submit" class="inbed" id="updatebed" name="submit" style="display:none;" value="修改"/>
+                        <input type="submit" class="outbed" id="outbed" name="submit" value="转出"/>
+			            <!-- <button type="submit" class="btn btn-default" id="inbed" name="submit" value="">进入</button>
+			            <button type="submit" class="btn btn-default" id="outbed">退出</button> -->
+			          </form>
+			        </div>
+			      </div>
+			    </div>
+		    </div>
+	    </div>
+	</div>
+    <!-- <hr id="hr2"> -->
+    <div class="panel-footer">
+        <div class="container" id="footer">
+          <p>&copy copyright 2019 产科分娩室管理系统</p>
+        </div>
+    </div>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></script>
+    <script src="JavaScript/jquery-3.3.1.min.js"></script>
+    <script src="js/dcalendar.picker.js"></script>
+    <script src="JavaScript/workbench.js"></script>
+    <script src="JavaScript/addPatient.js"></script>
+    <script type="text/javascript">
+        $('#date').dcalendarpicker({
+            format:'yyyy-mm-dd'
+        }); 
+    </script>
+  </body>
+</html>

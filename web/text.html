@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>bed</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style>
+    body{
+    	background-color: #F0FFF0;
+    }
+    .header{
+        background-color: #009999;
+        padding: 5px 0px 0px 30px;
+    }
+    .herder h2{
+        margin-left: 30px;
+    }
+    #logo{
+        width: 13%;
+        position: relative;
+        top: -12px;
+    }
+    .ul{
+        position: absolute;
+        top: 25px;
+        left: 530px;
+    }
+    .ul li a{
+    	color:white;
+    }
+    .ul li a:active{
+    	background-color: white;
+    }
+    #LinkActionOn{
+    	color:black;
+    }
+    #LinkActionOff{
+    	color:white;
+    }
+    #LinkActionOn:hover{
+    	background-color: white;
+    }
+    #LinkActionOff:hover{
+    	background-color: #339999;
+    }
+    .picture{
+        width: 44px;
+        height: 44px;
+        border-radius: 22px;
+        position: absolute;
+        right:113px;
+        top:3px;
+        background-color:#158080;
+        overflow:hidden
+    }
+    #personal{
+        color:white;
+        position: absolute;
+        right:50px;
+        top:32px;
+        opacity: 0.8;
+    }
+    #pespic{
+    	position: relative;
+    	left:-1px;
+    	top:-1px;
+    }
+    #triangle{
+    	position: absolute;
+    	right:20px;
+    	top:31px;
+    }
+    .administrator{
+        width: 160px;
+        height: 50px;
+        /*border-radius: 25px;*/
+        border-top-left-radius:25px;
+        border-bottom-left-radius: 25px;
+        position: absolute;
+        right:0px;
+        top:15px;
+        background-color: #006C6C;
+        /*opacity: 0.3;*/
+    }
+    .Login {
+        font-size: 14px;
+        color: white;
+    }
+    .Login a{
+        text-decoration: none;
+        color: white;
+    }
+    .Login #profile{
+        margin-right: -20px;
+        position: relative;
+        top:-10px;
+        left:50px;
+    }
+    .Login #logout{
+        position: relative;
+        top:10px;
+        left:15px;
+    }
+    .main{
+        position: relative;
+        left: 120px;
+    	display: flex;
+    	text-align: center;
+    	width:80%;
+        height:auto;
+    	justify-content: space-around;
+        align-content: space-around;
+        flex-wrap: wrap;
+        font-size: 32px;
+        background-color: white;
+        padding: 10px;
+        margin: 30px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+    }
+    .room{
+    	display: flex;
+    	padding: 10px;
+    	margin: 10px;
+    	width: 90%;
+    	height:450px;
+    	flex-direction: column;
+    }
+    .roomin{
+    	display: flex;
+    	padding: 20px;
+    	margin: 10px;
+    	/*border: 1px solid black;*/
+        border:1px solid #B3B3B3;
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+    	width: 100%;
+    	height:360px;
+        box-shadow: 3px 3px 5px #888888;
+    }
+    .oprator{
+    	display: flex;
+    	padding: 10px;
+    	margin: 10px;
+    	height:150px;
+    	width:35%;
+    	position: absolute;
+    	left:60%;
+    	top:20%;
+    	justify-content: space-around;
+        align-content: space-around;
+        flex-wrap: wrap;
+    }
+    #edit{
+        background-color: #33CC99;
+        border-radius: 10px;
+        height: 30px;
+        font-size: 13px;
+        width: 50px;
+        color: white;
+    }
+    #edit:hover{
+        opacity: 0.8;
+    }
+    .roomin table{
+    	font-size:15px;
+    }
+    td{
+    	text-align:left;
+    }
+    form{
+        margin: 20px;
+    }
+    .form{
+        position: relative;
+        left:225px;
+        width: 1200px;
+        /*border-radius: 10px;*/
+    }
+    #input{
+        width:110px;
+        border-radius: 5px;
+        margin: 0px 10px 0px 10px;
+    }
+    #button{
+        background-color: #33CC99;
+        border-radius: 10px;
+        height: 25px;
+        width: 50px;
+        color: white;
+    }
+    #button:hover{
+        opacity: 0.8;
+    }
+    #table{
+        border-radius: 10px;
+    }
+    .roomin::-webkit-scrollbar {/*滚动条整体样式*/
+            width: 4px;     /*高宽分别对应横竖滚动条的尺寸*/
+            height: 4px;
+            position: relative;
+            right:10px;
+        }
+    .roomin::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+            border-radius: 5px;
+            -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+            background: rgba(0,0,0,0.2);
+        }
+    .roomin::-webkit-scrollbar-track {/*滚动条里面轨道*/
+            -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+            border-radius: 0;
+            background: rgba(0,0,0,0.1);
+        }
+</style>
+<body>
+<div class="header">
+  		<h2><img src="../images/logo.png" id="logo"></h2>
+  		<div class="ul">
+          <ul class="nav nav-tabs">
+           <li class=""><a class="NotSelect" id="LinkActionOff" href="../workbench.html">工作台</a></li>
+            <li class=""><a class="NotSelect" id="LinkActionOff" href="../login/manageDoc.php">人员信息管理</a></li>
+            <li class="active"><a class="IsSelect" id="LinkActionOn" href="text.html">床位信息管理</a></li>
+            <li class=""><a class="NotSelect" id="LinkActionOff" href="message.html">信息汇总平台</a></li>
+          </ul>
+        </div>
+        <div class="administrator">
+        	<div class="picture">
+        		<img src="../images/icon.png" alt="" id="pespic">
+        	</div>
+        </div>
+        <div id="personal">
+            
+        </div>
+    </div>
+	<div class="cantrian">
+	  <div class="main">
+		<div class="room">
+			<h2>床位信息管理</h2>
+		<div class="roomin" style="overflow-y:scroll;">
+			<table class="table table-hover table-condensed table-striped" id="table_page">
+				<thead>
+					<tr>
+						<th>床号</th>
+                        <th>床位状态</th>
+                        <th>床位级别</th>
+                        <th>病历号</th>
+                        <th>病人姓名</th>
+                        <th>值班护士</th>
+					</tr>
+				</thead>
+				<tbody id="mes">
+				</tbody>
+			</table>
+	    </div>
+	    </div>
+      </div>
+      <div class="form">
+          <form action="php/action-edit.php" method="post" id="table">
+          <label>床号：</label><input type="text" id="input" name="id">
+          <label>病历号：</label><input type="text" id="input" name="title">
+          <label>病床状态：</label><input type="text" id="input" name="keywords">
+          <label>床位级别：</label><input type="text" id="input" name="autor">
+          <label>值班护士：</label><input type="text" id="input" name="addtime">
+          <input type="submit" value="修改" id="button">
+          </form>
+      </div>
+    </div>
+</body>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="connect.js"></script>
+    <script src="js/link.js"></script>
+</html>

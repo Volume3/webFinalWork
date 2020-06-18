@@ -1,0 +1,271 @@
+body{
+  margin: 0;
+/*  background: url("../images/9.jpg") no-repeat;*/
+/*  background-size: 100% 100%;*/
+  /*background-color: #e3e3e3;*/
+  box-sizing: border-box;
+/*  height: 1300px;*/
+}
+#BackG{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  background-color: #009999;
+  /*background-color: rgba(0,102,51,0.8);*/
+  width: 50%;
+  height: 100%;
+}
+#Shape_1 {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(224, 224, 224);
+  border-radius: 2px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  left: 162px;
+  top: 100px;
+  width: 325px;
+  height: 460px;
+  z-index: 10;
+}
+#Shape_2 {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(224, 224, 224);
+  border-radius: 2px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  left: 163px;
+  top: 102px;
+  width: 324.5px;
+  height: 460px;
+  z-index: 9;
+}
+#Shape_3 {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(224, 224, 224);
+  border-radius: 2px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.25);
+  position: absolute;
+  left: 166px;
+  top: 107px;
+  width: 320.5px;
+  height: 448px;
+  z-index: 8;
+  box-shadow: 4px 11px 3px #4A4A4A;
+}
+#LoginNow {
+  font-size: 22px;
+  font-family: "Candara";
+  color: #999;
+  line-height: 1.8;
+  text-align: left;
+  position: absolute;
+  left: 520px;
+  top: 630px;
+  z-index: 50;
+  width: 50px;
+}
+#LoginNow a{
+	color: white;
+	text-decoration: none;
+}
+#LoginNow a:hover{
+/*  color: #68838B;*/
+  text-shadow: 1px 1px 1px;
+}
+#SignUpIntro h2 {
+  position: absolute;
+  left: 225.5px;
+  top: 112px;
+  z-index: 35;
+  width: 80px;
+}
+#username{
+  position: absolute;
+  left: 210px;
+  top: 192px;
+  z-index: 41;
+  width: 184.5px;
+  height: 26px;
+  border: 1.5px solid #e3e3e6;
+  border-radius: 2px;
+  padding-left: 40px;
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 0px;
+  outline: none;     /*取消input被选中后出现的蓝框*/
+}
+#username:hover{
+	border-color: #93c273;
+}
+::-webkit-input-placeholder{
+	color: #a7a7a7;
+	position: relative;
+	top: 1px;
+}    /* 使用webkit内核的浏览器 */  
+#User_Icon{
+  position: absolute;
+  left: 219px;
+  top: 198px;
+  z-index: 41; 
+  border: 0px;
+}
+#Key_Icon1 {
+  position: absolute;
+  left: 219.5px;
+  top: 248px;
+  width: 16px;
+  height: 14px;
+  z-index: 41;
+}
+#Key_Icon2 {
+  position: absolute;
+  left: 219.5px;
+  top: 298px;
+  width: 16px;
+  height: 14px;
+  z-index: 41;
+}
+#password1{
+  position: absolute;
+  left: 213px;
+  top: 242px;
+  z-index: 40;
+  width: 184.5px;
+  height: 26px;
+  border: 1.5px solid #e3e3e6;
+  border-radius: 2px;
+  padding-left: 40px;
+  outline: none;     /*取消input被选中后出现的蓝框*/
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 0px;
+}
+#password1:hover{
+	border-color: #93c273;
+}
+#password2{
+  position: absolute;
+  left: 213px;
+  top: 292px;
+  z-index: 40;
+  width: 184.5px;
+  height: 26px;
+  border: 1.5px solid #e3e3e6;
+  border-radius: 2px;
+  padding-left: 40px;
+  outline: none;     /*取消input被选中后出现的蓝框*/
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 0px;
+}
+#password2:hover{
+	border-color: #93c273;
+}
+#mail {
+  position: absolute;
+  left: 213px;
+  top: 342px;
+  z-index: 41;
+  width: 184.5px;
+  height: 26px;
+  border: 1.5px solid #e3e3e6;
+  border-radius: 2px;
+  padding-left: 40px;
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 0px;
+  outline: none;     /*取消input被选中后出现的蓝框*/
+}
+#mail:hover{
+  border-color: #93c273;
+}
+#Mail_Icon{
+  position: absolute;
+  left: 128px;
+  top: 254px;
+  z-index: 45; 
+  border: 0px;
+  transform: scale(0.1,0.1);
+}
+#Tel{
+  position: absolute;
+  left: 213px;
+  top: 392px;
+  z-index: 41;
+  width: 184.5px;
+  height: 26px;
+  border: 1.5px solid #e3e3e6;
+  border-radius: 2px;
+  padding-left: 40px;
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 0px;
+  outline: none;     /*取消input被选中后出现的蓝框*/
+}
+#Tel:hover{
+    border-color: #93c273;
+}
+#Tel_Icon{
+  position: absolute;
+  left: 128px;
+  top: 304px;
+  z-index: 41; 
+  border: 0px;
+  transform: scale(0.1,0.1);
+}
+#SignBtn{
+  position: absolute;
+  left: 278px;
+  top: 460px;
+  z-index: 42; 
+  border: 1.8px solid #e3e3e6;
+  width: 90px;
+  height: 35px;
+  border-radius: 3px;
+  background-color: rgb(255, 255, 255);
+  color: #a7a7a7;
+  font-size: 14px;
+  outline: none;     /*取消input被选中后出现的蓝框*/
+}
+#SignBtn:hover{
+  cursor: pointer;
+  border: 1.8px solid #009999;
+}
+#MainPart{
+  transform: scale(1.1,1.1);
+  position: absolute;
+  top: -30px;
+  left: 52%;
+}
+#Medipng{
+  position: absolute;
+  left: -150px;
+  top: 40%;
+  background: url("../images/medical.png") no-repeat;
+  background-size: 100% 100%;
+  width: 300px;
+  height: 300px;
+}
+#Headline{
+  position: absolute;
+  left: 180px;
+  top: 15%;
+  background: url("../images/headline.png") no-repeat;
+  width: 450px;
+  height: 264px;
+  background-size: 100% 100%;
+}
+#Arrow{
+  position: absolute;
+  left: 1450px;
+  top: 670px;
+  width: 20px;
+  height: 27px;
+  background: url("../images/Arrow.png") no-repeat;
+  background-size: 100% 100%;
+  z-index: 3;
+}
